@@ -1,9 +1,8 @@
 const jwt = require("jsonwebtoken");
-const { JWT_SECRET } = process.env;
 
 async function generateToken(payload){
     try {
-        return jwt.sign(payload, JWT_SECRET, { expiresIn: "1h" });
+        return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "1h" });
     } catch (e) {
         return e
     }
@@ -11,7 +10,7 @@ async function generateToken(payload){
 
 async function verifyToken(payload){
     try {
-        return jwt.verify(payload)
+        return jwt.verify(payload, process.env.JWT_SECRET)
     } catch (e) {
         return e
     }

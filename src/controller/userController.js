@@ -59,22 +59,11 @@ async function postUser(req, res){
 }
 
 async function putUser(req, res){
+    const { id } = req.params;
     const { email, name, password, type } = req.body;
 
     try {
-        const users = await httpServiceDatabase.get("/users")
-        const emails = users.data.map(({ email }) => email )
-        if(emails.includes(email)){
-            return res.status(400).json({ messag: "Usuário já cadastrado."})
-        }
-
-    } catch (error) {
-        console.error(error)
-        return res.status(400).json({ message: "Erro desconhecido"})
-    }
-
-    try {
-        const response = await httpServiceDatabase.post(`/users`, {  email, name, password, type })
+        const response = await httpServiceDatabase.put(`/users/${id}`, {  email, name, password, type })
         if(response.data){
             const { data } = response
             return res.status(200).json({ data })

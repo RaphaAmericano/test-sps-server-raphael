@@ -15,8 +15,21 @@
       "type": "user"
     },
     {
-      "id": "c01f",
-      "email": "joao2@teste.com.br",
+      "name": "Marcio",
+      "password": "1234",
+      "type": "user",
+      "id": "c01f"
+    },
+    {
+      "id": "089d",
+      "email": "joao5@teste.com.br",
+      "name": "João",
+      "password": "1234",
+      "type": "user"
+    },
+    {
+      "id": "616b",
+      "email": "joao3@teste.com.br",
       "name": "João",
       "password": "1234",
       "type": "user"
