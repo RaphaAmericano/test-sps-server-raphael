@@ -1,0 +1,23 @@
+{
+  "name": "test-sps-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js & npm run db",
+    "start:dev": "npm run dev & npm run db",
+    "dev": " nodemon --inspect=7000 src/index.js",
+    "db": "npx json-server database/mock.json --port 3001"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.1",
+    "json-server": "^1.0.0-alpha.23",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
