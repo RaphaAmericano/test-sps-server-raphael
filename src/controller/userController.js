@@ -60,10 +60,25 @@ async function postUser(req, res){
 
 async function putUser(req, res){
     const { id } = req.params;
-    const { email, name, password, type } = req.body;
 
+    let user
     try {
-        const response = await httpServiceDatabase.put(`/users/${id}`, {  email, name, password, type })
+        const response = await httpServiceDatabase.get(`/users/${id}`)
+        if(response.data){
+            const { data } = response
+            user = data
+        }
+    } catch (error) {
+        console.error(error)
+        return res.status(400).json({ message: "Erro ao processar atualização do usuário"})
+    }
+
+    for (const key of Object.keys(req.body)) {
+        user[key] = req.body[key]
+    }
+    
+    try {
+        const response = await httpServiceDatabase.put(`/users/${id}`, user )
         if(response.data){
             const { data } = response
             return res.status(200).json({ data })
@@ -85,7 +100,7 @@ async function deleteUser(req, res){
         const response = await httpServiceDatabase.delete(`/users/${id}`)
         if(response.data){
             const { data } = response
-            return res.status(200).json({ message: "Usuário excluído com sucesso",data })
+            return res.status(200).json({ message: "Usuário excluído com sucesso", data })
         }
         return res.status(400).json({ message: "Erro desconhecido"})
     } catch (error) {
