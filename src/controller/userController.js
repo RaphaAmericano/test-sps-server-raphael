@@ -85,7 +85,7 @@ async function deleteUser(req, res){
         const response = await httpServiceDatabase.delete(`/users/${id}`)
         if(response.data){
             const { data } = response
-            return res.status(200).json({ data })
+            return res.status(200).json({ message: "Usuário excluído com sucesso",data })
         }
         return res.status(400).json({ message: "Erro desconhecido"})
     } catch (error) {

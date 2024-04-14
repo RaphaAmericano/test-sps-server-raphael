@@ -8,29 +8,50 @@
       "password": "1234"
     },
     {
-      "id": "c12b",
-      "name": "João",
-      "password": "1234",
-      "email": "joao@teste.com.br",
-      "type": "user"
-    },
-    {
       "name": "Marcio",
       "password": "1234",
       "type": "user",
       "id": "c01f"
     },
     {
-      "id": "089d",
-      "email": "joao5@teste.com.br",
-      "name": "João",
+      "id": "e272",
+      "email": "antonio@teste.com.br",
+      "name": "Antonio",
       "password": "1234",
       "type": "user"
     },
     {
-      "id": "616b",
-      "email": "joao3@teste.com.br",
-      "name": "João",
+      "id": "ee5e",
+      "email": "alberto@teste.com.br",
+      "name": "Alberto",
+      "password": "1234",
+      "type": "user"
+    },
+    {
+      "id": "18bf",
+      "email": "maria@teste.com.br",
+      "name": "Maria",
+      "password": "1234",
+      "type": "user"
+    },
+    {
+      "id": "c5dd",
+      "email": "ana@teste.com.br",
+      "name": "Ana",
+      "password": "1234",
+      "type": "user"
+    },
+    {
+      "id": "69ed",
+      "email": "isabel@teste.com.br",
+      "name": "Isabel",
+      "password": "1234",
+      "type": "user"
+    },
+    {
+      "id": "6b6c",
+      "email": "jaoao1@teste.com.br",
+      "name": "jaoo",
       "password": "1234",
       "type": "user"
     }
