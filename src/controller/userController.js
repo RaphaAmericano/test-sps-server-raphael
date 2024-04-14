@@ -77,7 +77,10 @@ async function putUser(req, res){
 
 async function deleteUser(req, res){
     const { id } = req.params
-
+    if(id === "1"){
+        // Usuário admin master não pode ser excluído
+        return res.status(400).json({ message: "Usuário não pode ser excluído"})
+    }
     try {
         const response = await httpServiceDatabase.delete(`/users/${id}`)
         if(response.data){
