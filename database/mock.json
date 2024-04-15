@@ -8,26 +8,6 @@
       "password": "1234"
     },
     {
-      "name": "Marcio",
-      "password": "1234",
-      "type": "user",
-      "id": "c01f"
-    },
-    {
-      "id": "e272",
-      "email": "antonio@teste.com.br",
-      "name": "Antonio",
-      "password": "1234",
-      "type": "user"
-    },
-    {
-      "id": "ee5e",
-      "email": "alberto@teste.com.br",
-      "name": "Alberto",
-      "password": "1234",
-      "type": "user"
-    },
-    {
       "id": "18bf",
       "email": "maria@teste.com.br",
       "name": "Maria",
@@ -51,9 +31,86 @@
     {
       "id": "6b6c",
       "email": "jaoao1@teste.com.br",
-      "name": "jaoo",
+      "name": "joão filho",
+      "password": "1234",
+      "type": "admin"
+    },
+    {
+      "id": "9865",
+      "email": "raphael@teste.com.br",
+      "name": "Raphael Americano",
+      "password": "12345",
+      "type": "admin"
+    },
+    {
+      "id": "dad5",
+      "email": "raphael@teste.com.ar",
+      "name": "Raphael Americano",
+      "password": "12345",
+      "type": "admin"
+    },
+    {
+      "id": "c348",
+      "email": "teste@spsgroup.com",
+      "name": "Raphael Americano",
+      "password": "12345",
+      "type": "user"
+    },
+    {
+      "id": "ae1b",
+      "email": "teste@spsgroup.com.br",
+      "name": "Raphael Americano",
+      "password": "12345",
+      "type": "admin"
+    },
+    {
+      "id": "0ae6",
+      "email": "raphael@teste.br.ar",
+      "name": "Raphael Americano",
+      "password": "123456",
+      "type": "admin"
+    },
+    {
+      "id": "6aaa",
+      "email": "emnailteste@teste.com.br",
+      "name": "Raphael Americano",
+      "password": "12345",
+      "type": "admin"
+    },
+    {
+      "id": "9500",
+      "email": "jorge@spsgroup.com.br",
+      "name": "Jorge",
+      "password": "12345",
+      "type": "admin"
+    },
+    {
+      "id": "96e3",
+      "email": "raphael.americano@spsgroup.com.br",
+      "name": "Raphael Americano",
+      "password": "1234455",
+      "type": "user"
+    },
+    {
+      "id": "cc41",
+      "email": "jorge@spsgroup.com.ar",
+      "name": "Jorge",
+      "password": "1234",
+      "type": "admin"
+    },
+    {
+      "id": "f585",
+      "email": "jorge@spsroup.com.ar",
+      "name": "Jorge",
       "password": "1234",
       "type": "user"
+    },
+    {
+      "id": "c76b",
+      "email": "jorge2@teste.com",
+      "name": "Jorge",
+      "password": "1234",
+      "type": "admin"
     }
   ]
 }

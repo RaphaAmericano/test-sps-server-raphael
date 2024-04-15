@@ -60,7 +60,10 @@ async function postUser(req, res){
 
 async function putUser(req, res){
     const { id } = req.params;
-
+    if(id === "1"){
+        // Usuário admin master não pode ser editado
+        return res.status(400).json({ message: "Usuário não pode ser editado"})
+    }
     let user
     try {
         const response = await httpServiceDatabase.get(`/users/${id}`)
@@ -76,7 +79,7 @@ async function putUser(req, res){
     for (const key of Object.keys(req.body)) {
         user[key] = req.body[key]
     }
-    
+
     try {
         const response = await httpServiceDatabase.put(`/users/${id}`, user )
         if(response.data){
