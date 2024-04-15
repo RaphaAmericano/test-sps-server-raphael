@@ -11,7 +11,6 @@ async function isAuth(req, res, next){
 
     try {
         const check = await verifyToken(tokenJwt)
-        console.log(check)
         if(!check){
             return res.status(401).json({ message: "Usuário não autenticado."})
         }        
