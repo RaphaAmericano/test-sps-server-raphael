@@ -15,7 +15,9 @@ async function authUser(req, res){
     }
     
     const user = users.data.find((user) => user.email === email || user.password === password )
-    
+    if(user.password !== password){
+        return res.status(404).json({ message: "Usuário ou senha inválido."})
+    }
     try {
         const token = await generateToken({ email, password })        
         return res.status(200).json({ email, token, ...user })

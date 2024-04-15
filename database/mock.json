@@ -36,43 +36,8 @@
       "type": "admin"
     },
     {
-      "id": "9865",
-      "email": "raphael@teste.com.br",
-      "name": "Raphael Americano",
-      "password": "12345",
-      "type": "admin"
-    },
-    {
       "id": "dad5",
       "email": "raphael@teste.com.ar",
-      "name": "Raphael Americano",
-      "password": "12345",
-      "type": "admin"
-    },
-    {
-      "id": "c348",
-      "email": "teste@spsgroup.com",
-      "name": "Raphael Americano",
-      "password": "12345",
-      "type": "user"
-    },
-    {
-      "id": "ae1b",
-      "email": "teste@spsgroup.com.br",
-      "name": "Raphael Americano",
-      "password": "12345",
-      "type": "admin"
-    },
-    {
-      "id": "0ae6",
-      "email": "raphael@teste.br.ar",
-      "name": "Raphael Americano",
-      "password": "123456",
-      "type": "admin"
-    },
-    {
-      "id": "6aaa",
-      "email": "emnailteste@teste.com.br",
       "name": "Raphael Americano",
       "password": "12345",
       "type": "admin"
