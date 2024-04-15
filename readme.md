@@ -24,3 +24,7 @@
 
 - Qual outra arquitetura de software poderia ser usada para esse projeto?
 - Qual banco de dados para armazenar os usuários?
+
+## Respostas
+- Poderia ser utilizada uma arquitetura combinando microserviços com monolito. Encarregando a parte de autenticação para um microserviço, enquanto a parte de usuários e outras entidas do sistema que se relacionam de forma mais direta com os usuários, como informações sobre atividades, outros cadastros e históricos, ficariam em um monolito. 
+- Um banco relacional como o MySQL poderia ser utilizado, pela praticidade e robustez ao criar relacionamentos entre a entidade de usuários e outras entidades.

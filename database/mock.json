@@ -36,13 +36,6 @@
       "type": "admin"
     },
     {
-      "id": "dad5",
-      "email": "raphael@teste.com.ar",
-      "name": "Raphael Americano",
-      "password": "12345",
-      "type": "admin"
-    },
-    {
       "id": "9500",
       "email": "jorge@spsgroup.com.br",
       "name": "Jorge",
@@ -55,27 +48,6 @@
       "name": "Raphael Americano",
       "password": "1234455",
       "type": "user"
-    },
-    {
-      "id": "cc41",
-      "email": "jorge@spsgroup.com.ar",
-      "name": "Jorge",
-      "password": "1234",
-      "type": "admin"
-    },
-    {
-      "id": "f585",
-      "email": "jorge@spsroup.com.ar",
-      "name": "Jorge",
-      "password": "1234",
-      "type": "user"
-    },
-    {
-      "id": "c76b",
-      "email": "jorge2@teste.com",
-      "name": "Jorge",
-      "password": "1234",
-      "type": "admin"
     }
   ]
 }
